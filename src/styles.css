@@ -1,0 +1,29 @@
+:root { font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #17202a; background: #f3f4f6; line-height: 1.6; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.shell { max-width: 960px; margin: 0 auto; padding: 32px 20px 64px; }
+header { padding: 20px 0 12px; }
+.eyebrow { color: #6b7280; font-size: 12px; letter-spacing: .12em; }
+h1 { margin: 4px 0; font-size: clamp(28px, 5vw, 44px); }
+h2 { margin-top: 0; }
+.subtle, small { color: #667085; }
+.progress { display: flex; flex-wrap: wrap; gap: 6px; margin: 14px 0; }
+.progress span { border: 1px solid #d0d5dd; border-radius: 999px; padding: 2px 9px; color: #667085; font-size: 12px; }
+.progress .active { border-color: #155eef; color: #155eef; font-weight: 700; }
+.notice { background: #fff8e1; border: 1px solid #f2cc60; border-radius: 10px; padding: 10px 14px; margin: 14px 0; font-size: 13px; }
+.card { background: white; border: 1px solid #d0d5dd; border-radius: 16px; padding: clamp(20px, 4vw, 36px); box-shadow: 0 8px 24px #10182812; }
+.issue, .claim, .evidence, .audit { border-left: 4px solid #98a2b3; background: #f9fafb; padding: 12px 16px; margin: 14px 0; border-radius: 8px; }
+.response-row { border: 1px solid #d0d5dd; border-radius: 10px; margin: 18px 0; padding: 14px; }
+.response-row legend { font-weight: 700; }
+.choices { display: flex; flex-wrap: wrap; gap: 18px; }
+label { cursor: pointer; }
+button { background: #155eef; color: white; border: 0; border-radius: 8px; padding: 10px 16px; font-weight: 700; cursor: pointer; }
+button:disabled { background: #98a2b3; cursor: not-allowed; }
+.consent, .range { display: block; margin: 18px 0; }
+.range input { display: block; width: 100%; max-width: 520px; }
+.condition-badge { display: inline-block; background: #ecfdf3; border: 1px solid #abefc6; color: #067647; border-radius: 999px; padding: 5px 10px; font-size: 12px; font-weight: 700; }
+.answer { white-space: pre-wrap; background: #f8f9fc; border-radius: 8px; padding: 16px; }
+blockquote { margin: 10px 0; border-left: 3px solid #155eef; padding: 8px 12px; background: white; }
+blockquote small { display: block; margin-top: 4px; }
+pre { overflow: auto; background: #101828; color: #e4e7ec; padding: 12px; border-radius: 8px; }
+footer { margin-top: 28px; color: #667085; font-size: 12px; text-align: center; }
