@@ -21,7 +21,7 @@ export async function signIn(email: string, password: string): Promise<{ access_
     body: JSON.stringify({ email, password }),
   });
   const body = await response.json();
-  if (!response.ok) throw new Error(body.error_description ?? body.msg ?? "Supabase sign-in failed");
+  if (!response.ok) throw new Error(body.error_description ?? body.msg ?? "Supabase 登录失败");
   return { access_token: body.access_token, user_id: body.user?.id ?? body.user_id };
 }
 
